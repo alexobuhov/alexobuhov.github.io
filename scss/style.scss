@@ -1,2 +1,161 @@
+// Обнулил стили и подключил шрифты
 @import "_null";
 @import "_font";
+
+$color1: rgb(59, 59, 59);
+$color2: rgb(102, 102, 102);
+$color3: rgb(0, 158, 221);
+
+body {
+  font-family: Raleway, sans-serif;
+  font-size: medium;
+  height: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  color: white;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: $color1;
+    z-index: 2;
+  }
+  .header__body {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    .header__title {
+      font-family: Lobster, sans-serif;
+      font-size: 28px;
+      position: relative;
+      z-index: 3;
+      &:hover {
+        color: $color3;
+        transition: all 0.3s ease 0s;
+      }
+    }
+    .header__list {
+      display: flex;
+      position: relative;
+      z-index: 2;
+      .header__link {
+        color: white;
+        font-size: 20px;
+        margin-right: 25px;
+        list-style: none;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        &:hover {
+          color: $color3;
+          border-bottom: solid 3px;
+          transition: all 0.3s ease 0s;
+        }
+      }
+    }
+  }
+}
+
+.works {
+  padding-top: 80px;
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3;
+      span {
+        position: absolute;
+        background-color: white;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+      }
+      &::before,
+      &::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+      }
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    .header__burger.active {
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+      &::before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      span {
+        transform: scale(0);
+      }
+    }
+    .header__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color2;
+      padding: 80px 0px 0px 20px;
+      overflow: auto;
+      transition: all 0.3s ease 0s;
+      .header__list {
+        text-transform: uppercase;
+        display: block;
+        li {
+          margin: 10px 0px 30px 0px;
+        }
+      }
+    }
+    .header__menu.active {
+      top: 0;
+      transition: all 0.3s ease 0s;
+    }
+  }
+  body.lock {
+    overflow: hidden;
+  }
+}
