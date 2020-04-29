@@ -74,6 +74,51 @@ body {
   }
 }
 
+.picture {
+  margin-top: 0px;
+  background-image: url("/img/cover.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0px;
+  background-attachment: fixed;
+  .picture__pattern {
+    background-color: rgba(44, 62, 80, 0.3);
+    background-image: url("/img/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+  .picture__contant {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .picture__subtitle {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    .picture__title {
+      font-size: 54px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .works {
   padding-top: 80px;
   p {
@@ -147,6 +192,9 @@ body {
         display: block;
         li {
           margin: 10px 0px 30px 0px;
+          &:hover {
+            color: $color3;
+          }
         }
       }
     }
