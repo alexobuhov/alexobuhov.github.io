@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+}
+
+.field {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #cccccc;
+}
+
+.excel {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.snakeBody {
+  background: #3b5717bb;
+  border-radius: 30%;
+}
+
+.snakeHeadRight {
+  background: #273a0ebb;
+  border-bottom-right-radius: 48%;
+  border-top-right-radius: 48%;
+  border-bottom-left-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+.snakeHeadLeft {
+  background: #273a0ebb;
+  border-bottom-right-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 48%;
+  border-top-left-radius: 48%;
+}
+
+.snakeHeadUp {
+  background: #273a0ebb;
+  border-bottom-right-radius: 20%;
+  border-top-right-radius: 48%;
+  border-bottom-left-radius: 20%;
+  border-top-left-radius: 48%;
+}
+
+.snakeHeadDown {
+  background: #273a0ebb;
+  border-bottom-right-radius: 48%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 48%;
+  border-top-left-radius: 20%;
+}
+
+.mouse div {
+  width: 100%;
+  height: 100%;
+  background: #eb0c0c;
+  border-radius: 50%;
+  border: 1px solid;
+}
