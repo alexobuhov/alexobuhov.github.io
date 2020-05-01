@@ -189,7 +189,7 @@ function move() {
 let direction = "right";
 let step = false;
 
-let interval = setInterval(move, 300);
+let interval = setInterval(move, 200);
 
 window.addEventListener("keydown", function (e) {
   if (step) {

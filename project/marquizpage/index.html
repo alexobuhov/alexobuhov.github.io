@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marquiz test page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Marquiz script start -->
+    <script
+      src="//script.marquiz.ru/v1.js"
+      type="application/javascript"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        Marquiz.init({
+          id: "5eab21f798ea2f004412d863",
+          autoOpen: 20,
+          autoOpenFreq: "always",
+          openOnExit: true,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="https://panel.marquiz.ru/quizzes"
+              ><img src="img/logo.png" alt=""
+            /></a>
+          </div>
+          <a
+            href="https://www.marquiz.ru/blog/chast-1-kak-poluchat-bolshe-zayavok-svoy-cherez-kviz"
+          >
+            <div class="header__link">
+              Как получить больше заявок?
+            </div>
+          </a>
+        </div>
+        <a class="header__right btn" href="https://panel.marquiz.ru/quizzes">
+          Создать квиз
+        </a>
+      </header>
+      <section class="content">
+        <div class="container">
+          <div class="content__inline">
+            <div class="content__inline__title title">
+              Квиз встроенный в страницу сайта
+            </div>
+            <div class="content__inline__info">
+              При этом способе установки квиз открывается в теле сайта, но при
+              разрешении экрана устройства меньше 767px, блок становиться
+              кнопкой.
+            </div>
+            <div class="marquiz__container marquiz__container_inline">
+              <a
+                class="marquiz__button marquiz__button_blicked marquiz__button_rounded marquiz__button_shadow"
+                href="#popup:marquiz_5eab292b5804060044126f6f"
+                data-fixed-side=""
+                data-alpha-color="rgba(211, 64, 133, 0.5)"
+                data-color="#d34085"
+                data-text-color="#ffffff"
+                >Кнопка вместо блока</a
+              >
+            </div>
+          </div>
+          <div class="content__botton">
+            <div class="content__botton__title title">
+              Квиз устaновленный кнопкой
+            </div>
+            <div class="content__botton__info">
+              При установке квиза на кнопку, квиз открывается в модальном окне
+              поверх страницы сайта. В нашем сервисе есть конструктор, в котором
+              можно применить разные стили к кнопке. Так же кнопку можно сделать
+              фиксированной к краю сайта.
+            </div>
+            <div class="content__botton__style">
+              <div class="marquiz__container">
+                <a
+                  class="marquiz__button marquiz__button_rounded"
+                  href="#popup:marquiz_5eab33e28b07f40044919a5f"
+                  data-fixed-side=""
+                  data-alpha-color="rgba(211, 64, 133, 0.5)"
+                  data-color="#d34085"
+                  data-text-color="#ffffff"
+                  >Закругленная</a
+                >
+              </div>
+              <div class="marquiz__container">
+                <a
+                  class="marquiz__button marquiz__button_shadow"
+                  href="#popup:marquiz_5eab33e28b07f40044919a5f"
+                  data-fixed-side=""
+                  data-alpha-color="rgba(211, 64, 133, 0.5)"
+                  data-color="#d34085"
+                  data-text-color="#ffffff"
+                  >С тенью</a
+                >
+              </div>
+              <div class="marquiz__container">
+                <a
+                  class="marquiz__button marquiz__button_blicked"
+                  href="#popup:marquiz_5eab33e28b07f40044919a5f"
+                  data-fixed-side=""
+                  data-alpha-color="rgba(211, 64, 133, 0.5)"
+                  data-color="#d34085"
+                  data-text-color="#ffffff"
+                  >С бликом</a
+                >
+              </div>
+              <div class="marquiz__container">
+                <a
+                  class="marquiz__button marquiz__button_rounded marquiz__button_shadow marquiz__button_blicked"
+                  href="#popup:marquiz_5eab33e28b07f40044919a5f"
+                  data-fixed-side=""
+                  data-alpha-color="rgba(211, 64, 133, 0.5)"
+                  data-color="#d34085"
+                  data-text-color="#ffffff"
+                  >Все стили вместе
+                </a>
+              </div>
+            </div>
+            <div class="content__botton__instruction">
+              <a class="btn" href="">Инструкция по установке кнопки</a>
+              <a class="btn" href=""
+                >Инструкция по установке квиза на свою кнопку</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__email">
+          <a href="mailto:inbox@marquiz.ru">inbox@marquiz.ru</a>
+        </div>
+        <div class="footer__offer">
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vQ4a8DlTOogOdlxygKir9j428IP-XthaC0wku_cBshBTky2_lG6pT2L7g2PuYl31359MrqmX4ohlkaP/pub"
+            >Офферта</a
+          >
+        </div>
+      </footer>
+    </div>
+    <div class="marquiz__container">
+      <a
+        class="marquiz__button marquiz__button_blicked marquiz__button_shadow marquiz__button_fixed marquiz__button_fixed-right"
+        href="#popup:marquiz_5eab33e28b07f40044919a5f"
+        data-fixed-side="right"
+        data-alpha-color="rgba(211, 64, 133, 0.5)"
+        data-color="#d34085"
+        data-text-color="#ffffff"
+        >Фиксированная кнопка</a
+      >
+    </div>
+
+    <div
+      class="marquiz-pops marquiz-pops_position_bottom-left marquiz-pops_rounded marquiz-pops_shadowed marquiz-pops_blicked marquiz-pops_pulse marquiz-pops_position"
+    >
+      <a
+        class="marquiz-pops__body"
+        href="#popup:marquiz_5eabd6ca98ea2f004412e363"
+        data-marquiz-pop-text-color="#ffffff"
+        data-marquiz-pop-background-color="#d34085"
+        data-marquiz-pop-svg-color="#fff"
+        data-marquiz-pop-close-color="#fff"
+        data-marquiz-pop-color-pulse="rgba(211, 64, 133, 0.4)"
+        data-marquiz-pop-color-pulse-alpha="rgba(211, 64, 133, 0)"
+        data-marquiz-pop-delay="10s"
+        data-marquiz-pop="true"
+        ><span class="marquiz-pops__icon"></span
+        ><span class="marquiz-pops__content"
+          ><span class="marquiz-pops__content-title">Пройти тест</span
+          ><span class="marquiz-pops__content-text"
+            >&laquo;Это квиз установленный всплывающим баннером&raquo;</span
+          ></span
+        ></a
+      >
+    </div>
+  </body>
+</html>
