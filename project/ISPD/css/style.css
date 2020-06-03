@@ -44,7 +44,7 @@ body {
 
 .roads {
   grid-area: menu;
-  background-image: url(img/menu-back.jpg);
+  background-image: url(../img/menu-back.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,7 +81,7 @@ body {
 
 .pension {
   grid-area: pension;
-  background-image: url(img/pension.jpeg);
+  background-image: url(../img/pension.jpeg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -111,7 +111,7 @@ body {
 
 .main {
   grid-area: main;
-  background-image: url(img/main.jpg);
+  background-image: url(../img/main.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -141,7 +141,7 @@ body {
 
 .picture1 {
   grid-area: picture1;
-  background-image: url(img/strelka.jpg);
+  background-image: url(../img/strelka.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,7 +149,7 @@ body {
 
 .prof {
   grid-area: prof;
-  background-image: url(img/logo-prof.png);
+  background-image: url(../img/logo-prof.png);
   background-color: #767d89;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ body {
 
 .search {
   grid-area: search;
-  background-image: url(img/poezd.jpg);
+  background-image: url(../img/poezd.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
