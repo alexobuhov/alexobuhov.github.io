@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Aktiv Grotesk Corp';
+	src: url('https://alexobuhov.github.io/static/fonts/AktivGroteskCorp-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Aktiv Grotesk Corp';
+	src: url('https://alexobuhov.github.io/static/fonts/AktivGroteskCorp-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aktiv Grotesk Corp';
+	src: url('https://alexobuhov.github.io/static/fonts/AktivGroteskCorp-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('https://alexobuhov.github.io/static/fonts/Gilroy-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('https://alexobuhov.github.io/static/fonts/Inter-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
